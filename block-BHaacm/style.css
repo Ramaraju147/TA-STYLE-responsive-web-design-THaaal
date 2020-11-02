@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding {
+  padding: 3rem 0rem;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+/* Header */
+
+header {
+  padding: 1.2rem 2rem;
+  background-color: rgb(34, 41, 70);
+}
+
+.brand-nav a {
+  margin-left: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Hero */
+
+.hero {
+  background-color: rgb(233, 236, 252);
+}
+
+.btn {
+  padding: 1rem 1.3rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.btn-primary {
+  color: white;
+  background-color: rgb(55, 182, 103);
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero p {
+  padding: 1.5rem 0rem;
+}
+
+.hero .btn-primary {
+  font-size: 1rem;
+}
+
+/* Blog */
+
+.flex-31 {
+  flex: 0 1 31%;
+}
+
+.blog h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.blog h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+
+.blog p {
+  padding: 1rem 0rem;
+}
+
+.blog img {
+  height: 15.6rem;
+  object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(34, 41, 70);
+  color: white;
+  padding: 1rem 0rem;
+}
+
+.footer i {
+  margin-left: 1rem;
+}
+
+/* Mobile Approach */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+
+  nav .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .brand-nav {
+    margin: 1rem 0rem;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex-48 {
+    padding: 0rem 2rem;
+    padding-bottom: 1.8rem;
+  }
+
+  .flex-31 {
+    padding: 0rem 2rem;
+    padding-bottom: 1.8rem;
+  }
+}
