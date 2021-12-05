@@ -1,0 +1,423 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* common */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+}
+
+html{
+font-family: 'Nunito', sans-serif;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.text-center{
+  text-align: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  margin-right: 1.3rem;
+}
+
+.active{
+  background: rgb(249,35,76);
+  color: white;
+}
+
+.active-text{
+  color:rgb(249,35,76);
+}
+
+.btn{
+  padding: 1rem 2rem;
+  color: white;
+  background-color: rgb(249,35,76);
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.padding{
+  padding: 4rem 0rem;
+}
+
+i{
+  color: white;
+  font-size: 1rem;
+}
+
+/* header */
+
+.header{
+  color: white;
+  position: absolute;
+  padding: 1.3rem 0rem;
+  left: 0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#toggle{
+  display: none;
+}
+
+.bars{
+  display:none;
+}
+
+h1{
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header a{
+  color: white;
+}
+
+/* hero */
+
+.hero{
+  background: linear-gradient(to right,rgb(54,40,169,0.4),rgb(54,40,169,0.4)),url("assets/banner.png") no-repeat;
+  background-size: cover;
+  padding: 10rem 0rem 4rem 0rem;
+  color: white;
+}
+
+h2{
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.hero p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 2rem 0rem;
+}
+
+.flex-55{
+  flex: 0 1 55%;
+}
+
+/* event */
+
+.flex-30{
+  flex: 0 1 30%;
+}
+
+.event-desc p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding: 2rem 0rem;
+  color: rgb(117,117,123);
+}
+
+h3{
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* join */
+
+.join{
+  background: rgb(222,236,254);
+}
+
+.card-number{
+  position: absolute;
+  top: -0.6rem;
+  height: 2rem;
+  width: 2rem;
+  background:  rgb(222,236,254);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main-heading{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.join-card{
+  position: relative;
+  padding: 1.5rem;
+  border: 1px dashed rgb(249,35,76);
+}
+
+h4{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.join-card p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  color: rgb(117,117,123);
+}
+
+/* schedule */
+
+.schedule p{
+  font-size: 1.2rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  color: rgb(117,117,123);
+}
+
+.date{
+  height: 8rem;
+  width: 8rem;
+  border: 1px dashed rgb(249,35,76);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.schedule-event{
+  padding-bottom: 3rem;
+}
+
+.flex-50{
+  flex: 0 1 50%;
+}
+
+/* highlights */
+.highlights{
+  background: rgb(222,236,254);
+}
+
+.highlights h4{
+  padding: 1rem 0rem;
+}
+
+.flex-24{
+  flex: 0 1 24%;
+}
+
+.highlight-box{
+ padding: 2rem;
+}
+
+/* video */
+
+.video{
+  height:0;
+  width: 100%;
+  padding-bottom: 56.25%;
+  position:relative;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+
+/* news */
+h5{
+  font-size:1.4rem;
+}
+
+.news{
+  background: rgb(222,236,254);
+}
+
+.news p{
+  color: rgb(117,117,123);
+  line-height: 1.3;
+  padding: 1rem 0rem;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+/* footer */
+
+.flex-15{
+  flex: 0 1 15%;
+}
+
+.flex-45{
+  flex: 0 1 45%;
+}
+
+.footer{
+  background: rgb(35,51,123);
+  padding: 2rem 0rem;
+}
+
+h6{
+  font-size: 1.2rem;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+}
+
+footer i{
+  color: white;
+  font-size: 1rem;
+  margin-right: 1.5rem;
+}
+
+.copyright{
+  padding: 1.5rem;
+  color: rgb(117,117,123);
+  background: rgb(15,33,105);
+}
+
+@media screen and (max-width: 768px){
+
+  html{
+    font-size: 12px;
+  }
+
+  .flex{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .column{
+    flex-direction: column;
+  }
+
+  .flex-15, .flex-24 .flex-30, .flex-45, .flex-50, .flex-55{
+    flex: 0 1 100%;
+    margin: 2rem 0rem;
+  }
+
+  .links{
+    display: none;
+  }
+
+  #toggle:checked ~ .links{
+    display: inline-block;
+  }
+
+  .brand{
+    z-index: 4;
+  }
+
+  .bars{
+    z-index: 3;
+    display: inline-block;
+  }
+
+  .links{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100vh;
+    background:rgb(54,40,169,0.8);
+    padding-top: 10rem;
+    z-index: 2;
+  }
+
+  .links li{
+    margin:0;
+    margin-bottom: 1.5rem;
+  }
+
+  .header.container{
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .hero-img{
+    order:-1;
+  }
+
+  .flex-30{
+    margin: 2rem 0rem;
+  }
+
+  .footer a{
+    font-size: 0.7rem;
+  }
+}
